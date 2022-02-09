@@ -17,7 +17,7 @@ export function EditUser() {
   const dispatch = useDispatch();
   const history = useHistory();
   
-  useEffect(() => { setValue('name', user?.name); setValue('email', user?.email); setValue('city', user?.city); }, [user]);
+  useEffect(() => { setValue('name', user?.name); setValue('email', user?.email); setValue('city', user?.city); }, [user, setValue]);
   
 
   const onSubmit = (data) => {
